@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastromedico.css" >
+    <title>Cadastro Médico</title>
+</head>
+<body>
+
+    <div class="corpao">
+        <form action="">
+            <div>
+                <label for="cpNome">Nome do Médico:</label>
+                <input type="text" id="cpNome" name="cpNome" maxlength="50" required>
+            </div>
+            <div>
+                <label for="cpEmail">E-mail:</label>
+                <input type="email" id="cpEmail" name="cpEmail">
+            </div>
+            <div>
+                <label for="cpCRM">CRM:</label>
+                <input type="text" id="cpCRM" name="cpCRM" maxlength=20 required>
+            </div>
+            <div>
+                <label for="cpTelefone">Telefone:</label>
+                <input type="tel" id="cpTelefone" placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <div>
+                <label for="cpEspe">Especialização:</label>
+                <select name="cpEspe" id="cpEspe">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Ortopedista">Ortopedista</option>
+                    <option value="Neurologista">Neurologista</option>
+                    <option value="Infectologista">Infectologista</option>
+                    <option value="Pediatra">Pediatra</option>
+                </select>
+            </div>
+            <div>
+                <label for="cpPlano">Atende Plano de Saúde:</label></br>
+                <input id="cpPlano" type="radio" name="cpPlano" value="S">Sim
+                <input id="cpPlanoB" type="radio" name="cpPlano" value="N">Não
+                
+                <div class="cpNumPlanos">
+                    <label for="cpNumPlanos">Numero de Planos Atendidos:</label>
+                    <select name="cpNumPlanos" id="cpNumPlanos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                
+                <div class="nomePlanos">
+                    <div id="nomePlano1">
+                        <label for="cpNomePlano1">Nome do Plano:</label>
+                        <input type="text" id="cpNomePlano1" name="cpNomePlano1" maxlength="100">
+                    </div>
+                    <div id="nomePlano2">
+                        <label for="cpNomePlano2">Nome do Plano:</label>
+                        <input type="text" id="cpNomePlano2" name="cpNomePlano2" maxlength="100">
+                    </div>
+                    <div id="nomePlano3">
+                        <label for="cpNomePlano3">Nome do Plano:</label>
+                        <input type="text" id="cpNomePlano3" name="cpNomePlano3" maxlength="100">
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div>
+                <button id="enter" type="submit">Cadastrar</button>
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+
+<script src="js/cadastromedico.js"></script>
+        
+</body>
+</html>
